@@ -1,0 +1,52 @@
+# Deploy Static Site to GitHub Pages
+#
+# PURPOSE: Publish this flattened, fully-static export of drsandy.com to
+#          GitHub Pages. There is no build step -- the repository root is
+#          already the deployable site (plain HTML/CSS/JS/images).
+#
+# TRIGGERS:
+#   - Push to main
+#   - Manual dispatch (workflow_dispatch) from the Actions tab
+#
+# REQUIREMENTS:
+#   - Repository Settings -> Pages -> Source set to "GitHub Actions"
+#
+# LAST UPDATED: 2026-08-17
+
+name: Deploy static site to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload site as Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

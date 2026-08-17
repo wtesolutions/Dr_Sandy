@@ -1,0 +1,57 @@
+A {
+	COLOR: #84843a
+}
+A:visited {
+	COLOR: #84843a
+}
+A:active {
+	COLOR: #84843a
+}
+A:hover {
+	COLOR: #84843a
+}
+.drsandyfineprint {
+	FONT-SIZE: 8pt; COLOR: #999999; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.drsandyfineprint:hover {
+	FONT-SIZE: 8pt; COLOR: #84843a; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.footer {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+A.footer:hover {
+	FONT-SIZE: 9pt; COLOR: #990033; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.drsandybody {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, Geneva
+}
+.drsandyheader {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.drsandybold {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.drsandybodyitalic {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-STYLE: italic; FONT-FAMILY: Arial, Helvetica, Geneva
+}
+.drsandyitalic {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-STYLE: italic; FONT-FAMILY: Arial, Helvetica, Geneva
+}
+.drsandylink {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+A.drsandylink:hover {
+	FONT-SIZE: 9pt; COLOR: #990033; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: underline
+}
+.drsandybolditalic {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #000000; FONT-STYLE: italic; FONT-FAMILY: Arial, Helvetica, Geneva
+}
+.drsandybolduline {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, Geneva; TEXT-DECORATION: underline
+}
+.drsandyuline {
+	FONT-SIZE: 9pt; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, Geneva; TEXT-DECORATION: underline
+}
+.drsandyredprice {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #990033; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
